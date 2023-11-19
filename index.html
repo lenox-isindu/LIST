@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<h1>LENOX ISINDU TO DO LIST</h1>
-<P> Mto do list</P>
-<div class="nav">
-    <ul>
-        <li> <a href="#">done</li>
-            <li> <a href="#">done</li>
-                <li> <a href="#">to do</li>
-                    <li> <a href="#">pending</li>
-    </ul>
-</div>
 <body>
-    
+    <h1>To-Do List</h1>
+    <form id="todoForm">
+        <label for="task">New Task:</label>
+        <input type="text" id="task" placeholder="Enter your task" required>
+        <button type="button" onclick="addTask()">Add</button>
+    </form>
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
 </body>
 </html>
